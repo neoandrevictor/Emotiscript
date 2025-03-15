@@ -15,6 +15,8 @@ function transpilar(codigo) {
     novo_codigo = novo_codigo.replace(/🔖/g, "getElementById");
     novo_codigo = novo_codigo.replace(/🩲/g, "innerHTML");
     novo_codigo = novo_codigo.replace(/📔/g, "src");
+    novo_codigo = novo_codigo.replace(/🖌️/g, "style");
+    novo_codigo = novo_codigo.replace(/🪟/g, "display");
     novo_codigo = novo_codigo.replace(/📅/g, "Date");
     novo_codigo = novo_codigo.replace(/⭕/g, "()");
 
