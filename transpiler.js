@@ -12,6 +12,7 @@ let dicionario = [
     ["📄", "document"],
     ["🔖", "getElementById"],
     ["🩲", "innerHTML"],
+    ["🧦", "innerText"],
     ["📔", "src"],
     ["🖌️", "style"],
     ["🪟", "display"],
