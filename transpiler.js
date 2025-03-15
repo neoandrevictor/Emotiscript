@@ -11,6 +11,7 @@ function transpilar(codigo) {
 
     let novo_codigo = codigo;
 
+    novo_codigo = novo_codigo.replace(/🛠️/g, "function");
     novo_codigo = novo_codigo.replace(/📄/g, "document");
     novo_codigo = novo_codigo.replace(/🔖/g, "getElementById");
     novo_codigo = novo_codigo.replace(/🩲/g, "innerHTML");
