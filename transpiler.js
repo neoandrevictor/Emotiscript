@@ -7,21 +7,47 @@ function executar() {
     eval(document.getElementById("transpilado").value);
 }
 
+let dicionario = [
+    ["🛠️", "function"],
+    ["📄", "document"],
+    ["🔖", "getElementById"],
+    ["🩲", "innerHTML"],
+    ["📔", "src"],
+    ["🖌️", "style"],
+    ["🪟", "display"],
+    ["📅", "Date"],
+    ["⭕", "()"]
+]
+
 function transpilar(codigo) {
 
     let novo_codigo = codigo;
 
-    novo_codigo = novo_codigo.replace(/🛠️/g, "function");
-    novo_codigo = novo_codigo.replace(/📄/g, "document");
-    novo_codigo = novo_codigo.replace(/🔖/g, "getElementById");
-    novo_codigo = novo_codigo.replace(/🩲/g, "innerHTML");
-    novo_codigo = novo_codigo.replace(/📔/g, "src");
-    novo_codigo = novo_codigo.replace(/🖌️/g, "style");
-    novo_codigo = novo_codigo.replace(/🪟/g, "display");
-    novo_codigo = novo_codigo.replace(/📅/g, "Date");
-    novo_codigo = novo_codigo.replace(/⭕/g, "()");
+    for (let k = 0; k < dicionario.length; k++) {
+        let regex = new RegExp(dicionario[k][0], 'g');
+        novo_codigo = novo_codigo.replace(regex, dicionario[k][1]);
+
+    }
+
 
     return novo_codigo;
 
 }
 
+function codigos() {
+    let codigosDiv = document.getElementById("codigos");
+
+    for (let k = 0; k < dicionario.length; k++) {
+        let p = document.createElement("p");
+        p.innerHTML = "<button onclick='digita(this.innerText)'>" + dicionario[k][0] + "</button> - " + dicionario[k][1];
+        codigosDiv.appendChild(p);
+
+    }
+}
+
+codigos();
+
+function digita(emoji) {
+    document.getElementById("codigo").value = document.getElementById("codigo").value + emoji;
+    document.getElementById("transpilado").value = transpilar(document.getElementById("codigo").value);
+}
