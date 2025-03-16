@@ -17,6 +17,7 @@ let dicionario = [
     ["⬅️", "return"],
     ["🎰", "try"],
     ["🛠️", "function"],
+    ["🫗", "delete"],
     ["📢", "alert"],
     ["🖥️", "console.log"],
     ["🖨️", "window.print"],
