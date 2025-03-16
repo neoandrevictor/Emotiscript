@@ -83,7 +83,7 @@ function codigos() {
 
     for (let k = 0; k < dicionario.length; k++) {
         let p = document.createElement("p");
-        p.innerHTML = "<button onclick='digita(this.innerText)'>" + dicionario[k][0] + "</button> - " + dicionario[k][1];
+        p.innerHTML = "<button class='emojiButton' onclick='digita(this.innerText)'>" + dicionario[k][0] + "</button>" + dicionario[k][1];
         codigosDiv.appendChild(p);
 
     }
