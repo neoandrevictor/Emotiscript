@@ -9,6 +9,13 @@ function executar() {
 
 let dicionario = [
     ["📦", "let"],
+    ["🗃️", "var"],
+    ["🔒", "const"],
+    ["➡️", "if"],
+    ["🎚️", "switch"],
+    ["➰", "for"],
+    ["⬅️", "return"],
+    ["🎰", "try"],
     ["🛠️", "function"],
     ["📢", "alert"],
     ["🖥️", "console.log"],
