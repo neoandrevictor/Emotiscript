@@ -8,6 +8,7 @@ function executar() {
 }
 
 let dicionario = [
+    ["📦", "let"],
     ["🛠️", "function"],
     ["📢", "alert"],
     ["🖥️", "console.log"],
