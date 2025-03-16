@@ -38,7 +38,22 @@
     </head>
 
     <body>
-        <textarea onkeydown="translocar(this.value)" id="codigo">📄.🔖("teste").🩲=📅⭕</textarea>
+        <textarea onkeydown="translocar(this.value)" id="codigo">🛠️ atualizarRelogio ⭕ {
+        📦 agora = 🥚 📅⭕;
+        📦 horas = agora.getHours⭕;
+        📦 minutos = agora.getMinutes⭕;
+        📦 segundos = agora.getSeconds⭕;
+        
+        ➡️ (horas 🟰 10) { horas = "0" + horas; }
+        ➡️ (minutos 🟰 10) { minutos = "0" + minutos; }
+        ➡️ (segundos 🟰 10) { segundos = "0" + segundos; }
+        
+        📦 horario = horas + ":" + minutos + ":" + segundos;
+        
+        📄.🔖("teste").🩲 = "🕒 " + horario;
+        }
+        
+        setInterval(atualizarRelogio, 1000);</textarea>
         <textarea id="transpilado"></textarea>
         <button onclick="executar()">Executar</button>
         <div id="teste"></div>
