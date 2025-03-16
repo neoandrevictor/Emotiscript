@@ -11,6 +11,7 @@ let dicionario = [
     ["🛠️", "function"],
     ["📢", "alert"],
     ["🖥️", "console.log"],
+    ["🖨️", "window.print"]
     ["📄", "document"],
     ["🔖", "getElementById"],
     ["🩲", "innerHTML"],
