@@ -14,7 +14,7 @@ let dicionario = [
     ["➡️", "if"],
     ["🎚️", "switch"],
     ["🔂", "for"],
-    ["🔁", "while"]
+    ["🔁", "while"],
     ["⬅️", "return"],
     ["🎰", "try"],
     ["🛠️", "function"],
