@@ -40,6 +40,10 @@ let dicionario = [
     ["🎁", "Object"],
     ["📅", "Date"],
     ["🔢", "BigInt"],
+    ["🔺", "MAX_SAFE_INTEGER"],
+    ["🔻", "MIN_SAFE_INTEGER"],
+    ["🔣", "isInteger"],
+    ["🛡️", "isSafeInteger"],
     ["🪢", "String"],
     ["📏", "length"],
     ["🅰", "charAt"],
@@ -122,6 +126,8 @@ let dicionario = [
     ["🦁", "||="],
     ["🦭", "??="],
     ["⭕", "()"]
+
+
 ]
 
 function transpilar(codigo) {
