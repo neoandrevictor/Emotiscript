@@ -97,7 +97,17 @@ let dicionario = [
     ["📋", "[]"],
     ["🗂️", "Array"],
     ["📤", "push"],
+    ["🚚", "shift"],
+    ["↩️", "unshift"],
+    ["📑", "copyWithin"],
     ["📐", "isArray"],
+    ["🧵", "join"],
+    ["🎈", "pop"],
+    ["🛖", "flat"],
+    ["🗺️", "flatMap"],
+    ["➔", "=>"],
+    ["🧬", "splice"],
+    ["🔀", "toSpliced"],
     ["🗄️", "{}"],
     ["🕳️", "undefined"],
     ["▫️", "''"],
@@ -170,3 +180,6 @@ function digita(emoji) {
     document.getElementById("codigo").value = document.getElementById("codigo").value + emoji;
     document.getElementById("transpilado").value = transpilar(document.getElementById("codigo").value);
 }
+
+
+document.getElementById("qtd").innerText = dicionario.length;
