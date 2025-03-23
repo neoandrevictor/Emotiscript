@@ -189,7 +189,17 @@ let dicionario = [
     ["🕊️", "getUTCMinutes"],
     ["🌠", "getUTCSeconds"],
     ["💫", "getUTCMilliseconds"],
-    ["🧭", "getTimezoneOffset"]
+    ["🧭", "getTimezoneOffset"],
+    ["🖋️", "setDate"],
+    ["🌳", "setFullYear"],
+    ["🕓", "setHours"],
+    ["🕥", "setMinutes"],
+    ["⏲️", "setMilliseconds"],
+    ["🌾", "setMonth"],
+    ["🕦", "setSeconds"],
+    ["🕛", "setTime"]
+
+
 
 
 
