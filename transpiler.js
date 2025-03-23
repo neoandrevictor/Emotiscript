@@ -171,24 +171,41 @@ let dicionario = [
     ["🕰️", "toDateString"],
     ["🌐", "toUTCString"],
     ["📈", "toISOString"],
-    ["🔧", "parse"]
+    ["🔧", "parse"],
+    ["🗓️", "getFullYear"],
+    ["🎑", "getMonth"],
+    ["📜", "getDate"],
+    ["🌤️", "getDay"],
+    ["⏰", "getHours"],
+    ["🕒", "getMinutes"],
+    ["⏳", "getSeconds"],
+    ["⏱️", "getMilliseconds"],
+    ["🕐", "getTime"],
+    ["🕯️", "getUTCDate"],
+    ["🌋", "getUTCFullYear"],
+    ["🛤️", "getUTCMonth"],
+    ["🪐", "getUTCDay"],
+    ["🌎", "getUTCHours"],
+    ["🕊️", "getUTCMinutes"],
+    ["🌠", "getUTCSeconds"],
+    ["💫", "getUTCMilliseconds"],
+    ["🧭", "getTimezoneOffset"]
+
+
 
 
 ]
 
 function transpilar(codigo) {
-
     let novo_codigo = codigo;
 
-    for (let k = 0; k < dicionario.length; k++) {
-        let regex = new RegExp(dicionario[k][0], 'g');
-        novo_codigo = novo_codigo.replace(regex, dicionario[k][1]);
+    const mapa = new Map(dicionario.map(([key, value]) => [key, value]));
 
-    }
+    const regex = new RegExp([...mapa.keys()].join('|'), 'g');
 
+    novo_codigo = novo_codigo.replace(regex, match => mapa.get(match));
 
     return novo_codigo;
-
 }
 
 function codigos() {

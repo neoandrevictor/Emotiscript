@@ -40,17 +40,17 @@
     <body>
         <textarea onkeydown="translocar(this.value)" id="codigo">🛠️ atualizarRelogio ⭕ {
         📦 agora = 🥚 📅⭕;
-        📦 horas = agora.getHours⭕;
-        📦 minutos = agora.getMinutes⭕;
-        📦 segundos = agora.getSeconds⭕;
+        📦 horas = agora.⏰⭕;
+        📦 minutos = agora.🕒⭕;
+        📦 segundos = agora.⏳⭕;
         
-        ➡️ (horas 🐜 10) { horas = "0" + horas; }
-        ➡️ (minutos 🐜 10) { minutos = "0" + minutos; }
-        ➡️ (segundos 🐜 10) { segundos = "0" + segundos; }
+        ➡️ (horas 🐜 9) { horas = "0" + horas; }
+        ➡️ (minutos 🐜 9) { minutos = "0" + minutos; }
+        ➡️ (segundos 🐜 9) { segundos = "0" + segundos; }
         
         📦 horario = horas + ":" + minutos + ":" + segundos;
         
-        📄.🔖("teste").🩲 = "🕒 " + horario;
+        📄.🔖("teste").🩲 =  horario;
         }
         
         setInterval(atualizarRelogio, 1000);</textarea>
