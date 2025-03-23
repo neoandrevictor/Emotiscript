@@ -170,7 +170,9 @@ let dicionario = [
     ["⭕", "()"],
     ["🕰️", "toDateString"],
     ["🌐", "toUTCString"],
-    ["📈", "toISOString"]
+    ["📈", "toISOString"],
+    ["🔧", "parse"]
+
 
 ]
 
