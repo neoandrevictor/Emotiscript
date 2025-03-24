@@ -97,6 +97,8 @@ let dicionario = [
     ["♾️", "Infinity"],
     ["🔩", "toFixed"],
     ["🐂", "Boolean"],
+    ["✅", "true"],
+    ["❌", "false"]
     ["🌑", "null"],
     ["📋", "[]"],
     ["🗂️", "Array"],
