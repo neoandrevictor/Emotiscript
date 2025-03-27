@@ -16,6 +16,7 @@ let dicionario = [
     ["🎚️", "switch"],
     ["💼", "case"],
     ["🛑", "break"],
+    ["❤️", "continue"],
     ["🚦", "default"],
     ["🔂", "for"],
     ["🛗", "in"],
