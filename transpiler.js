@@ -251,11 +251,12 @@ let dicionario = [
     ["🏛️", "instanceof"],
     ["👷‍♂️", "constructor"],
     ["🖤", "void"],
-    ["🏳️‍🌈", "backgroundColor"]
-
-
-
-
+    ["🏳️‍🌈", "backgroundColor"],
+    ["🏄", "parseFloat"],
+    ["🏆", "parseInt"],
+    ["🏁", "=+"],
+    ["🎇", "toExponential"],
+    ["🏅", "toPrecision"],
 
 
 
