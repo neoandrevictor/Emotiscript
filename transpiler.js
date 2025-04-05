@@ -248,7 +248,10 @@ let dicionario = [
     ["🏷️", "has"],
     ["🏞️", "Map"],
     ["🫴", "get"],
-
+    ["🏛️", "instanceof"],
+    ["👷‍♂️", "constructor"],
+    ["🖤", "void"],
+    ["🏳️‍🌈", "backgroundColor"]
 
 
 
