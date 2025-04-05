@@ -257,9 +257,9 @@ let dicionario = [
     ["🏁", "=+"],
     ["🎇", "toExponential"],
     ["🏅", "toPrecision"],
-    ["🛏️", "rest"]
-
-
+    ["🛏️", "rest"],
+    ["🧪", "test"],
+    ["🏎️", "exec"]
 
 
 
